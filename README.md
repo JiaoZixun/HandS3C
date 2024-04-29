@@ -6,6 +6,12 @@ The causal-conv1d and mamba-ssm can be downloaded here, pip install /yourpath/xx
 ``` bash
 pip install -r requirements.txt
 ```
+All data and model files can be found here 
+``` bash
+url：https://pan.baidu.com/s/1bl-GJ01Nqs9ZqnNP1VV1KA?pwd=ev6u 
+password：ev6u 
+```
+
 ## 1. test
 The data and models can be downloaded here. \
 
