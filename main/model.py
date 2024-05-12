@@ -4,21 +4,21 @@ from torch.nn import functional as F
 
 from config import cfg
 from nets.backbone import FPN
-from nets.SSCA import SSCA
+from nets.S3C import S3C
 from nets.regressor import Regressor
 
 
 
 class Model(nn.Module):
-    def __init__(self, backbone, ssca, regressor):
+    def __init__(self, backbone, s3c, regressor):
         super(Model, self).__init__()
         self.backbone = backbone
-        self.SSCA = ssca
+        self.S3C = s3c
         self.regressor = regressor
         
     def forward(self, inputs, targets, meta_info, mode):
         feats = self.backbone(inputs['img'])
-        feats = self.SSCA(feats)
+        feats = self.S3C(feats)
         if mode == 'train':
             gt_mano_params = torch.cat([targets['mano_pose'], targets['mano_shape']], dim=1)
         else:
@@ -61,9 +61,9 @@ def init_weights(m):
 
 def get_model(mode):
     backbone = FPN(pretrained=True)
-    ssca = SSCA(hidden_dim=256, W=32, attn_drop_rate=0)         # State Space channel Attention   Frei:28   HO3D: 32  
+    s3c = S3C(hidden_dim=256, W=32, attn_drop_rate=0)         # State Space channel Attention   Frei:28   HO3D: 32  
     regressor = Regressor()
     if mode == 'train':
         regressor.apply(init_weights)
-    model = Model(backbone, ssca, regressor)
+    model = Model(backbone, s3c, regressor)
     return model

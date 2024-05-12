@@ -200,16 +200,13 @@ class SS2D(nn.Module):
             return_last_state=False,
         ).view(B, K, -1, L)
         assert out_y.dtype == torch.float
-
         inv_y = torch.flip(out_y[:, 2:4], dims=[-1]).view(B, 2, -1, L)
         wh_y = torch.transpose(out_y[:, 1].view(B, -1, W, H), dim0=2, dim1=3).contiguous().view(B, -1, L)
         invwh_y = torch.transpose(inv_y[:, 1].view(B, -1, W, H), dim0=2, dim1=3).contiguous().view(B, -1, L)
-
         return out_y[:, 0], inv_y[:, 0], wh_y, invwh_y
 
     def forward_corev_channel(self, x: torch.Tensor):
         self.selective_scan = selective_scan_fn
-        
         B, C, H, W = x.shape
         L = H * W
         K = 4
@@ -233,7 +230,6 @@ class SS2D(nn.Module):
             return_last_state=False,
         ).view(B, K, -1, L)
         assert out_y.dtype == torch.float
-
         inv_y = torch.flip(out_y[:, 2:4], dims=[-1]).view(B, 2, -1, L)
         wh_y = torch.transpose(out_y[:, 1].view(B, -1, W, H), dim0=2, dim1=3).contiguous().view(B, -1, L)
         invwh_y = torch.transpose(inv_y[:, 1].view(B, -1, W, H), dim0=2, dim1=3).contiguous().view(B, -1, L)
@@ -241,10 +237,8 @@ class SS2D(nn.Module):
 
     def forward(self, x: torch.Tensor, **kwargs):
         B, H, W, C = x.shape
-
         xz = self.in_proj(x)
         x, z = xz.chunk(2, dim=-1) # (b, h, w, d)
-
         x = x.permute(0, 3, 1, 2).contiguous()
         x = self.act(self.conv2d(x)) # (b, d, h, w)
         x_c = x.permute(0, 3, 1, 2).contiguous()
@@ -267,7 +261,7 @@ class SS2D(nn.Module):
         return out
 
 
-class SSCA(nn.Module):
+class S3C(nn.Module):
     def __init__(
         self,
         hidden_dim: int = 0,

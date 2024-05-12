@@ -11,7 +11,7 @@ class Config:
     testset = 'HO3D'
     
     ## input, output
-    input_img_shape = (224, 224)
+    input_img_shape = (256, 256)
     
     ## training config
     if trainset == 'HO3D':
