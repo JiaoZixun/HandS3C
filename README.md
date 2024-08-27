@@ -1,10 +1,12 @@
 # HandS3C
 
 Effective receptive fields (from left to right: FPN, Self-Attention, State Space Attention (SSA) and State-Space Spatial-Channel Attention (S3C)).
-[![Effective receptive fields](https://csdnimg.cn/cdn/content-toolbar/csdn-logo_.png?v=20190924.1 "Effective receptive fields")](https://github.com/JiaoZixun/HandS3C/blob/main/fig1.jpg)
+![Effective receptive fields](https://github.com/JiaoZixun/HandS3C/blob/main/fig1.jpg "Effective receptive fields")
+
+
 
 Attention characterization map. It is worth noting that the S3C module is able to obtain sufficient hand information in the hand interaction edge region and the occlusion region. And the method expands the range of the receptive field so that it can capture the global feature mapping. (Orange is the occluded region and red is the hand interaction edge region)
-https://github.com/JiaoZixun/HandS3C/blob/main/fig6.jpg
+![Effective receptive fields](https://github.com/JiaoZixun/HandS3C/blob/main/fig6.jpg "Effective receptive fields")
 
 
 ## 0. environment
