@@ -17,8 +17,8 @@ pip install -r requirements.txt
 ```
 All data and model files can be found here 
 ``` bash
-url：https://pan.baidu.com/s/1bl-GJ01Nqs9ZqnNP1VV1KA?pwd=ev6u 
-password：ev6u 
+url：https://pan.baidu.com/s/1gYYI1y8wSCPr5QAhRGnksQ?pwd=ckol 
+password：ckol 
 ```
 
 ## 1. test
