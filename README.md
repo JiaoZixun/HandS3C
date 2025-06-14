@@ -46,3 +46,18 @@ It should be noted that the FREI dataset image size of (224, 224) requires chang
 ``` bash
 python test.py --gpu 0 --test_epoch 100 --train_name FREI_HandS3C
 ```
+
+
+## Reference
+``` bash
+@INPROCEEDINGS{10887953,
+  author={Jiao, Zixun and Wang, Xihan and Xia, Zhaoqiang and Shao, Lianhe and Gao, Quanli},
+  booktitle={ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={HandS3C: 3D Hand Mesh Reconstruction with State Space Spatial Channel Attention from RGB images}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-5},
+  keywords={Hands;Solid modeling;Three-dimensional displays;Computational modeling;Computer architecture;Signal processing;Feature extraction;Computational efficiency;Speech processing;Image reconstruction;3D Hand Mesh Reconstruction;Deep Learning;Effective Receptive Field;Human-computer Interaction;State Space Model},
+  doi={10.1109/ICASSP49660.2025.10887953}}
+```
