@@ -1,4 +1,6 @@
-# HandS3C
+# HandS3C: 3D Hand Mesh Reconstruction with State Space Spatial Channel Attention from RGB images
+
+Our paper has been accepted as oral by ICASSP2025 and can be found here![here](https://ieeexplore.ieee.org/document/10887953)
 
 Effective receptive fields (from left to right: FPN, Self-Attention, State Space Attention (SSA) and State-Space Spatial-Channel Attention (S3C)).
 ![Effective receptive fields](https://github.com/JiaoZixun/HandS3C/blob/main/fig1.jpg "Effective receptive fields")
