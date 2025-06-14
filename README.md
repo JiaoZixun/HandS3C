@@ -4,6 +4,10 @@
 
 ![](https://github.com/JiaoZixun/HandS3C/blob/main/paper.png "")
 
+## Abstract
+
+Reconstructing the hand mesh from one single RGB image is a challenging task because hands are often occluded by other objects. Most previous works attempt to explore more additional information and adopt attention mechanisms for improving 3D reconstruction performance, while it would increase computational complexity simultaneously. To achieve a performance preserving architecture with high computational efficiency, in this work, we propose a simple but effective 3D hand mesh reconstruction network (i.e., HandS3C), which is the first time to incorporate state space model into the task of hand mesh reconstruction. In the network, we design a novel state-space spatial-channel attention module that extends the effective receptive field, extracts hand features in the spatial dimension, and enhances regional features of hands in the channel dimension. This helps to reconstruct a complete and detailed hand mesh. Extensive experiments conducted on well-known datasets facing heavy occlusions (such as FREIHAND, DEXYCB, and HO3D) demonstrate that our proposed HandS3C achieves state-of-the-art performance while maintaining minimal parameters. Code can be available in \href{https://github.com/JiaoZixun/HandS3C}{https://github.com/JiaoZixun/HandS3C
+
 ## Introduction
 Effective receptive fields (from left to right: FPN, Self-Attention, State Space Attention (SSA) and State-Space Spatial-Channel Attention (S3C)).
 ![Effective receptive fields](https://github.com/JiaoZixun/HandS3C/blob/main/fig1.jpg "Effective receptive fields")
