@@ -1,6 +1,6 @@
 # HandS3C: 3D Hand Mesh Reconstruction with State Space Spatial Channel Attention from RGB images
 
-## Our paper has been accepted as oral by ICASSP2025 and can be found ![here](https://ieeexplore.ieee.org/document/10887953)
+## Our paper has been accepted as oral by ICASSP2025 and can be found [here](https://ieeexplore.ieee.org/document/10887953)
 
 
 ## Introduction
