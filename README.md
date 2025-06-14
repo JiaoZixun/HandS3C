@@ -2,50 +2,7 @@
 
 ## Our paper has been accepted as oral by ICASSP2025 and can be found [here](https://ieeexplore.ieee.org/document/10887953)
 
-```
-\title{HandS3C: 3D Hand Mesh Reconstruction \\ with State Space Spatial Channel Attention \\ from RGB images
-}
-
-% \author{\IEEEauthorblockN{1\textsuperscript{st} Zixun Jiao}
-% \IEEEauthorblockA{
-% \textit{Xi’an Polytechnic University}\\
-% Xi’an, China \\
-% 0000-0001-9438-6124}
-% \and
-% \IEEEauthorblockN{2\textsuperscript{nd} Xihan Wang}
-% \IEEEauthorblockA{
-% \textit{Xi’an Polytechnic University}\\
-% Xi’an, China \\
-% xihanwang@xpu.edu.cn}
-% \and
-% \IEEEauthorblockN{3\textsuperscript{rd} Zhaoqiang Xia}
-% \IEEEauthorblockA{
-% \textit{Northwestern Polytechnical University}\\
-% Xi’an, China \\
-% zxia@nwpu.edu.cn}
-% \and
-% \IEEEauthorblockN{4\textsuperscript{th} Lianhe Shao}
-% \IEEEauthorblockA{
-% \textit{Xi’an Polytechnic University}\\
-% Xi’an, China \\
-% shaolianhe@xpu.edu.cn}
-% \and
-% \IEEEauthorblockN{5\textsuperscript{th} Quanli Gao}
-% \IEEEauthorblockA{
-% \textit{Xi’an Polytechnic University}\\
-% Xi’an, China \\
-% gaoquanli@xpu.edu.cn}
-% }
-
-\author{
-Zixun Jiao$^{1}$ \qquad Xihan Wang$^{1}$ \qquad Zhaoqiang Xia$^{2}$
-\qquad Lianhe Shao$^{1}$ \qquad Quanli Gao$^{1,*}$
-\\
-$^{1}$Xi’an Polytechnic University, Xi’an, China,
-$^{2}$Northwestern Polytechnical University, Xi’an, China \\
-$^{*}$corresponding author
-}
-```
+![](https://github.com/JiaoZixun/HandS3C/blob/main/paper.png "")
 
 ## Introduction
 Effective receptive fields (from left to right: FPN, Self-Attention, State Space Attention (SSA) and State-Space Spatial-Channel Attention (S3C)).
